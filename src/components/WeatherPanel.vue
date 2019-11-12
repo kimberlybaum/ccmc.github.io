@@ -1,7 +1,7 @@
 <template>
-   <div class="sixteen wide computer sixteen wide tablet sixteen wide mobile column">
-     <button class = "ui button" >
-         <div class = "title">{{ msg }}</div>
+        <div class="sixteen wide computer sixteen wide tablet sixteen wide mobile column">
+     <button class = "ui button">
+         <div class = "Day">{{ day }}</div>
          <div class = "weatherType">{{ type }}</div>
          <div class = "lowHigh">Low: {{ low }} High: {{ high }}</div>
     </button>
@@ -12,11 +12,25 @@
 
 export default {
   name: 'WeatherPanel',
+  data(){
+    return{
+      id:this.$route.params.id,
+      city: {}
+    }
+  },
+    // created(){
+    // this.$http.get("localhost:8080/city/"+this.id).then(function(data){
+    //     console.log(data);
+    //    this.city = data.body;
+    // })
+   
+  // },
+
   props: {
-    msg: String,
+    day: String,
     type: String,
-    low: Number,
-    high: Number
+    low: String,
+    high: String
   }
 }
 
@@ -34,9 +48,9 @@ color: black;
     background: white;
     -webkit-box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
     box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
-    padding: 30px;
-    margin-bottom: 30px;
-    width: 30vw;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 25vw;
     border: 1px solid #fff;
 }
 ul {
@@ -44,16 +58,22 @@ ul {
   padding: 0;
 }
 
-button div.title{
+div.Day{
 font-weight: 700;
     font-size: 14pt;
-    margin-top: -20px;
+    margin-top: -10px;
     line-height: 1.28571429em;
 }
-button div.weatherType{
+
+div.weatherType{
+    font-size: 10pt;
+    color: lightslategray;
+    font-weight: 100;
+    padding: 0px;
     
 }
-button div.lowHigh{
+
+div.lowHigh{
     margin-top: .5em;
     font-size: 11pt;
     font-weight: 10;

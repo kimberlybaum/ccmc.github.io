@@ -5,11 +5,12 @@
     <div id="grid">
       <div class="ui equal width grid">
         <div class="sixteen wide computer sixteen wide tablet sixteen wide mobile column">
-            <CityPanel msg="Washington, DC"/>
-            <CityPanel msg="Boston, MA"/>
-            <CityPanel msg="Chicago, IL"/>
-            <CityPanel msg="Los Angeles, CA"/>
+            <router-link to ="/city/2514815"><CityPanel msg="Washington, DC"></CityPanel></router-link>
+            <router-link to ="/city/2367105"><CityPanel msg="Boston, MA"></CityPanel></router-link>
+            <router-link to ="/city/2379574"><CityPanel msg="Chicago, IL"></CityPanel></router-link>
+            <router-link to ="/city/2442047"><CityPanel msg="Los Angeles, CA"></CityPanel></router-link>
         </div>
+        <router-view></router-view>
       </div>
 
     </div>
@@ -20,21 +21,25 @@
 
 import CityPanel from '@/components/CityPanel.vue';
 
+
   export default {
     name: 'Home',
     components: {
       CityPanel
+    },
+    methods:{
     }
   }
+
 
 </script>
 <style>
 
 #grid {
-  width: 30%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5vw;
+  flex-grow: 1;
 }
 .column {
 

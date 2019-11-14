@@ -38,8 +38,8 @@ import * as axios from 'axios';
     }
   },
   created () {
-    var self = this;
     
+    var self = this;
     axios.get('https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/' + this.getWoeID).then(function(response) {
       
       self.today = {

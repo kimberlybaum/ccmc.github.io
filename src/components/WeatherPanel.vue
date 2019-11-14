@@ -10,22 +10,12 @@
 
 <script>
 
-
-
 export default {
   name: 'WeatherPanel',
   data(){
       return{
       }
     },
-
-    // created(){
-    // this.$http.get("localhost:8080/city/"+this.id).then(function(data){
-    //     console.log(data);
-    //    this.city = data.body;
-    // })
-   
-  // },
 
   props: {
     day: String,
@@ -37,7 +27,6 @@ export default {
 
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
   margin: 40px 0 0;

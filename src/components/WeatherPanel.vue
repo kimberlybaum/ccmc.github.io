@@ -3,7 +3,7 @@
      <button class = "ui button">
          <div class = "Day">{{ day }}</div>
          <div class = "weatherType">{{ type }}</div>
-         <div class = "lowHigh">Low: {{ low }} High: {{ high }}</div>
+         <div class = "lowHigh"><span id="lowtemp">Low: {{ low.toFixed(2) }} </span><span>    High: {{ high.toFixed(2) }}</span></div>
     </button>
      </div>
 </template>
@@ -68,6 +68,10 @@ div.lowHigh{
     font-size: 11pt;
     font-weight: 10;
     color: hsl(240, 4%, 26%);
+}
+
+span#lowtemp {
+margin-right: 5px;
 }
 
 li {

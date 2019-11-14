@@ -5,10 +5,10 @@
     <div id="grid">
       <div class="ui equal width grid">
         <div class="sixteen wide computer sixteen wide tablet sixteen wide mobile column">
-            <router-link to ="/city/2514815"><CityPanel msg="Washington, DC"></CityPanel></router-link>
-            <router-link to ="/city/2367105"><CityPanel msg="Boston, MA"></CityPanel></router-link>
-            <router-link to ="/city/2379574"><CityPanel msg="Chicago, IL"></CityPanel></router-link>
-            <router-link to ="/city/2442047"><CityPanel msg="Los Angeles, CA"></CityPanel></router-link>
+            <router-link to ="/city/2306179"><CityPanel msg="Taipei"></CityPanel></router-link>
+            <router-link to ="/city/1226113"><CityPanel msg="Phuket"></CityPanel></router-link>
+            <router-link to ="/city/1225448"><CityPanel msg="Bangkok"></CityPanel></router-link>
+            <router-link to ="/city/1079132"><CityPanel msg="Pyongyang"></CityPanel></router-link>
         </div>
         <router-view></router-view>
       </div>

@@ -1,5 +1,5 @@
 <template>
-        <div class="sixteen wide computer sixteen wide tablet sixteen wide mobile column">
+      <div class="sixteen wide computer sixteen wide tablet sixteen wide mobile column">
      <button class = "ui button">
          <div class = "Day">{{ day }}</div>
          <div class = "weatherType">{{ type }}</div>
@@ -10,14 +10,15 @@
 
 <script>
 
+
+
 export default {
   name: 'WeatherPanel',
   data(){
-    return{
-      id:this.$route.params.id,
-      city: {}
-    }
-  },
+      return{
+      }
+    },
+
     // created(){
     // this.$http.get("localhost:8080/city/"+this.id).then(function(data){
     //     console.log(data);

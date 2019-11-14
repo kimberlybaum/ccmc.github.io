@@ -2,16 +2,14 @@
 <template>
 <div>
     <router-link to ="/" class="router-link-active"> ← </router-link>
-    <h1>{{ this.$route.params.id }}</h1>
+    <h1>{{ this.title }}</h1>
     <div id="grid">
       <div class="ui equal width grid">
-
-    <WeatherPanel day = "Today" type = "Rainy" low = 0 high = 0></WeatherPanel>
-        <WeatherPanel day = "Tomorrow" type = "Cloudy" low = 0 high = 0></WeatherPanel>
-    <WeatherPanel day = "In Two Days" type = "Windy" low = 0 high = 0></WeatherPanel>
-
+    <WeatherPanel day = "Today" :type = "this.today['type']" :low = "this.today['low']" :high = "this.today['high']"></WeatherPanel>
+    <WeatherPanel day = "Tomorrow" :type = "this.tomorrow['type']" :low = "this.tomorrow['low']" :high = "this.tomorrow['high']"></WeatherPanel>
+    <WeatherPanel day = "In Two Days" :type = "this.inTwoDays['type']" :low = "this.inTwoDays['low']" :high = "this.inTwoDays['high']"></WeatherPanel>
+      </div>
     <router-view></router-view>
-</div>
 </div>
 </div>
 </template>
@@ -19,12 +17,55 @@
 <script>
 
 import WeatherPanel from '@/components/WeatherPanel.vue';
+import * as axios from 'axios';
 
   export default {
     name: 'City',
     components: {
       WeatherPanel
+    },
+  data () {
+    return {
+      today: {},
+      tomorrow: {},
+      inTwoDays: {},
+      title: "",
     }
+  },
+  computed: {
+    getWoeID () {
+      return  String(this.$route.params.woeid)
+    }
+  },
+  created () {
+    var self = this;
+    
+    axios.get('https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/' + this.getWoeID).then(function(response) {
+      
+      self.today = {
+        "low": response.data.consolidated_weather[0]['min_temp'],
+        "high": response.data.consolidated_weather[0]['max_temp'],
+        "type": response.data.consolidated_weather[0]['weather_state_name']
+      };
+
+      self.tomorrow = {
+        "low": response.data.consolidated_weather[1]['min_temp'],
+        "high": response.data.consolidated_weather[1]['max_temp'],
+        "type": response.data.consolidated_weather[1]['weather_state_name']
+      };
+
+      self.inTwoDays = {
+        "low": response.data.consolidated_weather[2]['min_temp'],
+        "high": response.data.consolidated_weather[2]['max_temp'],
+        "type": response.data.consolidated_weather[2]['weather_state_name']
+      };
+
+      self.title = response.data.title;
+
+    });
+    
+  }
+
   }
 
 </script>

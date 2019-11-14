@@ -17,7 +17,7 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/Home.vue')
     },
     {
-      path: '/city/:id',
+      path: '/city/:woeid',
       // component: WeatherPanel,
       name: 'city',
       // route level code-splitting

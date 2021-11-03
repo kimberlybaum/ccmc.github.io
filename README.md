@@ -20,5 +20,11 @@ npm run build
 npm run lint
 ```
 
+### If envelope issue run
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

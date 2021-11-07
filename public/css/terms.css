@@ -1,0 +1,38 @@
+
+p {
+    text-align: left;
+}
+
+.p_break {
+    margin: 2vw;
+    text-align: left
+}
+
+#terms h2{
+    margin-top: 10vh;
+    margin-bottom: 8vh;
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+p {
+    font-size: .8em;
+    line-height: 1.5em;
+    color: hsl(0, 0%, 72%)
+}
+
+.bottomSocials {
+    text-align: center
+}
+
+.container.container--huge {
+    margin-left: 15vw;
+    margin-right:15vw;
+}
+
+@media screen and (max-width: 650px) {
+    .container.container--huge {
+        margin-left: 1vw !important;
+        margin-right:1vw !important;
+    }
+}
+

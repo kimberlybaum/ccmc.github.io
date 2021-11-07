@@ -1,0 +1,633 @@
+*, :after, :before {
+	box-sizing: border-box;
+}
+
+#header {
+    position:fixed; /* fixing the position takes it out of html flow - knows
+    				   nothing about where to locate itself except by browser
+    				   coordinates */
+    left:0;			/* top left corner should start at leftmost spot */
+    top:0;			/* top left corner should start at topmost spot */
+    width:100%;		/* take up the full browser width */
+    z-index:200;	/* high z index so other content scrolls underneath */
+    height:75px; 	/* define height so you can define for content */
+	/* background-color:rgba(0, 0, 0, 0.406); otherwise content underneath will be visible */
+	color: white;
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.32);
+	font-family: 'Roboto Condensed',sans-serif;
+}
+
+#front_card{
+	background-color: rgba(0, 0, 0, 0.71);
+	margin-top:calc(68vh - 90px);
+	font-size: 15px;
+	box-shadow: 10px 0px 20px 10px rgb(0,0, 0, .16);
+}
+
+#front_card p {
+	font-size: 15px;
+	font-family: 'Roboto',sans-serif;
+}
+
+#logo{
+	display: inline-block;
+	padding: 10px;
+	font-size: 2.5em;
+
+}
+
+#logo a {
+	color: white;
+	font-size: 20px;
+}
+
+nav {
+	padding: 10px;
+	margin-right: 0px;
+	margin-left: auto;
+	vertical-align: middle;
+}
+
+ul {
+	height: 100%;
+    padding: 0px;
+	margin: 0;
+}
+
+
+/* #header ul li{
+	display: inline-block;
+	float: right;
+	height: 100%;
+	border: .5px solid white;
+	padding: auto;
+} */
+
+
+#header ul li{
+	display: inline-block;
+	float: right;
+	height: 100%;
+padding:15px;
+font-size: 1em;
+letter-spacing: .2rem;
+}
+
+
+#header ul li a {
+	width:100%;
+	height:100%;
+}
+#text2, #text1 {
+	border: .5px solid rgba(255, 255, 255, 0.543);
+	padding:25px;
+}
+
+#text2:hover, #text1:hover{
+	-moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+	-webkit-transition: all .3s ease-in;
+    transition: all .2s ease-in;
+	background: #f5f5f5; 
+	color: black;
+}
+
+
+
+ul li#discord, ul li#instagram, ul li#twitter{
+	margin: auto;
+    padding: 10px;
+}
+
+#discord a img, #instagram a img, #twitter a img{
+	filter: invert(100);
+	width:30px;
+	
+
+}
+
+
+#discord img:hover, #instagram img:hover, #twitter img:hover{
+	transition: all .3s ease-in-out;
+	width:35px;
+	
+}
+
+#front_buttons {
+	align-content: center;
+	margin: 1vw;
+}
+
+#front_buttons button{
+	background-color: rgb(112, 72, 232);
+	color: white;
+	font-size: 18px;
+	padding: 10px;
+	border: none;
+	display: block;
+	font-weight: 800;
+	margin-bottom: 10px;
+	width: 100%;
+	font-family: 'roboto condensed', sans-serif;
+	letter-spacing: .2rem;
+
+	/* transition: transform .7s ease-in-out; */
+}
+
+#front_buttons button:hover{
+	-moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+	-webkit-transition: all .3s ease-in;
+	background-color: rgb(69, 41, 154);
+}
+
+#front_buttons button a{
+	color: white;
+}
+
+button#mint_now {
+	background-color: hsl(346, 95%, 63%);
+}
+
+
+a, a:hover, a:focus, a:active {
+	color: inherit !important;
+}
+
+section#milestones.container.container--huge div.content{
+	background-color:#151515;
+}
+
+
+
+button#mint_now:hover{
+	-moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	background-color: #1e8fb1;
+}
+
+#party_animals_nft div.content{
+	text-align:left;
+	padding:64px;
+	background-color:#151515;
+	display: flex;
+	padding-bottom: 0px;
+
+}
+
+.written{
+	width: 100%;
+    margin-right: 64px;
+}
+
+#gif{
+	display: inline-block
+}
+
+#gif img{
+	height: 50vh;
+}
+
+#our_vision div.content{
+	text-align:left;
+	padding:64px;
+	background-color:#151515;
+}
+
+section#milestones.container.container--huge {
+	padding:0px!important;
+}
+#milestones div.content {
+	padding: 64px;
+	background-color:#151515;
+	padding-bottom: 0px;
+	width: 75vw;
+}
+
+
+#milestones ul li{
+	list-style: none;
+	border: #303030 1px solid;
+	text-align: left;
+	padding: 3vw;
+	width: 100%;
+
+}
+
+#partners div.content{
+	text-align:left;
+	padding: 64px;
+	padding-top: 0;
+	padding-bottom: 0px;
+}
+
+#partners div.content h2{
+}
+
+
+#partners div.content p{
+	text-align:left;
+}
+
+#our_vision div.content {
+	padding: 64px;
+	background-color:#151515;
+	padding-bottom: 0px;
+	width: 75vw;
+}
+#team.container{
+	width: 100%;
+}
+
+#team div.content {
+	padding: 64px;
+	background-color:#151515;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 75vw;
+	margin: auto;
+	text-align: center;
+}
+
+#kim, #pete, #harrison {
+	width: 30%;
+	display: inline-block;
+	text-align: center;
+}
+
+#team p {
+margin-top:10px;
+}
+
+#team div {
+	text-align: left;
+}
+#team {
+	display: inline-block
+}
+#team img{
+	width: 100%;
+}
+
+
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: 'roboto', sans-serif;
+	background-color: #151515 !important;
+	
+}
+
+h1 {
+	margin-bottom: 10px;
+	margin-top: -2px;
+}
+
+.content h2 {
+	font-size:50px;
+	line-height:64px;
+	font-weight:400;
+	margin-bottom: 20px;
+	font-family: 'Roboto Condensed',sans-serif;
+color:white;
+	letter-spacing: .2rem;
+}
+
+.content h3 {
+	font-size:25px;
+	line-height:64px;
+	font-weight:400;
+	margin-bottom: 20px;
+	font-family: 'Roboto Condensed',sans-serif;
+color:white;
+	letter-spacing: .2rem;
+}
+
+
+
+hr{
+	width:60vw;
+	margin-top: 20px;
+	margin-bottom:20;
+	opacity: .2;
+}
+
+.content p {
+	font-size: 14px;
+	/* letter-spacing: rem; */
+	line-height: 24px;
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: rgb(222, 222, 222)
+}
+
+
+p:last-child {
+	margin-bottom: 0;
+}
+p.p--credits {
+	font-size: 14px;
+	font-size: .9rem;
+	font-family: 'Roboto Condensed',sans-serif;
+}
+p strong {
+	display: inline-block;
+	margin-bottom: 2px;
+}
+
+a {
+	font-weight: 700;
+	text-decoration: none;
+}
+a.a--no-weight {
+	font-style: italic;
+	font-weight: 300;
+}
+
+.container {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0;
+	padding:20px;
+	position: relative;
+	width: 100%;
+}
+
+.container--big {
+	height: 175vh;
+}
+.container--full {
+	height: 100vh;
+}
+.container--small {
+	/* height: 40vh; */
+	width: 75vw;
+    text-align: center;
+    margin: auto;
+}
+.container .content {
+	/* background: rgba(0, 0, 0, .75); */
+	/* border-radius: 8px; */
+	color: #fff;
+	margin: 0 auto;
+	padding: 25px;
+	border-radius: 0.3em;
+	text-align: center;
+}
+
+section.copyright.container.container--small{
+	height:10vh;
+}
+
+p#copyright_mark {
+	color:rgb(80, 80, 80);
+	font-size: 14px;
+	font-family: 'Roboto Condensed',sans-serif;
+
+}
+
+.parallax__container {
+	clip: rect(0, auto, auto, 0);
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -100;
+}
+.parallax__container .parallax {
+	/* can be put in a seperate class for better control */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* --------------------------- */
+	position: fixed;
+	top: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	width: 100%;
+
+}
+
+.bg1 {
+	background-image: url("../img/CityScene 2.png") !important;
+	transition: scale 250ms ease-in-out;
+}
+
+#bg2 {
+	background-color:#151515;
+}
+
+#bg3 {
+	/* background-image: url("../img/bg3.jpg"); */
+	background-color:#151515;
+}
+
+.show-on-mobile--inline {
+	display: none;
+}
+
+.arrow {
+	-webkit-animation: bounce 3s infinite;
+	animation: bounce 3s infinite;
+	bottom: -64px;
+	bottom: -4rem;
+	left: calc(50% - 19px);
+	position: absolute;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	transition: opacity 250ms ease-in-out;
+	width: 38px;
+	filter: invert(100);
+	
+}
+.arrow--hide {
+	opacity: 0;
+}
+
+.background--stretch {
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+	60% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+	60% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+}
+
+#lolla {
+	color: rgb(0, 217, 255) !important;
+	transition: color 150ms ease-in-out;
+}
+
+#lolla:hover {
+	color: rgb(58, 44, 255) !important;
+	transition: color 150ms ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+	.hide-on-mobile {
+		display: none;
+	}
+
+	.show-on-mobile--inline {
+		display: inline;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	
+	#header ul li{
+		display: inline-block;
+		float: right;
+		height: 70%;
+		padding:10px;
+		font-size: .7em;
+		font-family: 'Roboto Condensed',sans-serif;
+	}
+	#discord a img, #instagram a img, #twitter a img{
+		filter: invert(100);
+		width:20px;
+	
+	}
+
+	
+	div#header{
+		background-color: rgba(0, 0, 0, 0.32);
+		height:auto
+	}
+
+	ul li#discord, ul li#instagram, ul li#twitter {
+		padding:5px;
+	}
+
+
+	.container{
+		padding:40px 4% 0;
+	}
+
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+
+	#party_animals_nft div.content {
+		display: block;
+	}
+
+	#gif {
+		margin-top:64px;
+	}
+
+	#gif img{
+		width: 100%; 
+		height:auto;
+	}
+
+
+	#logo{
+		overflow:hidden;
+		font-size: 20px;
+		font-family: 'Roboto Condensed',sans-serif;
+	}
+
+	#discord a img, #instagram a img, #twitter a img{
+		filter: invert(100);
+		width:20px;
+	
+	}
+	.container{
+		/* padding:40px 4% 0; */
+		/* background-color: #151515; */
+	}
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+	.container--small {
+		width: 90vw;
+		text-align: center;
+		margin: auto;
+	}
+
+	.container--big {
+		width: 90vw;
+		text-align: center;
+		margin: auto;
+	}
+
+	#milestones div.content {
+		width: 90vw;
+		text-align: center;
+		margin: auto;
+	}
+
+	
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+		.container--small {
+			width: 100vw;
+			text-align: center;
+			margin: auto;
+		}
+
+		.container--big {
+			width: 100vw;
+			text-align: center;
+			margin: auto;
+		}
+
+		#milestones div.content {
+			width: 100vw;
+			text-align: center;
+			margin: auto;
+		}
+
+}

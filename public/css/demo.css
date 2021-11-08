@@ -50,7 +50,7 @@
 }
 
 #hr {
-	margin-top: 10px;
+	margin-top: 15px;
 }
  #description {
 	margin-bottom: 40px !important;
@@ -396,6 +396,8 @@ h1 {
 
 img#vision_image {
 	padding-top: 10px;
+	margin-bottom: 15px;
+	margin-top: 5px;
 	width: 100%;
 
 	padding-bottom: 20px;
@@ -456,15 +458,15 @@ margin: 0px
 }
 
 #highlights {
-	width: 50%;
+	width: 68%;
     text-align: center;
     margin: auto;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 	letter-spacing: .05rem;
 	font-weight: 400;
-    font-size: 12pt;
+    font-size: 15pt;
     color: rgb(222, 222, 222);
-	line-height: 30px;
+	line-height: 37px;
 	font-family: 'roboto condensed', sans-serif;
 
 }

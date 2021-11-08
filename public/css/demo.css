@@ -82,10 +82,11 @@ ul {
 #header ul li{
 	display: inline-block;
 	float: right;
-	height: 100%;
-padding:15px;
+	height: fit-content;
+padding:0px;
 font-size: 1em;
 letter-spacing: .2rem;
+margin-top: 18px;
 }
 
 
@@ -94,26 +95,31 @@ letter-spacing: .2rem;
 	height:100%;
 	text-align: center;
 }
-#text2, #text1 {
+#text2 a, #text1 a{
 	border: .5px solid rgba(255, 255, 255, 0.543);
-	padding:25px;
+	padding:20px;
 	text-align: center
 }
 
-#text2:hover, #text1:hover{
+#text2 a:hover, #text1 a:hover{
 	-moz-transition: all .3s ease-in;
     -o-transition: all .3s ease-in;
 	-webkit-transition: all .3s ease-in;
     transition: all .2s ease-in;
 	background: #f5f5f5; 
-	color: black;
+	color: black !important;
 }
 
 
 
 ul li#discord, ul li#instagram, ul li#twitter{
 	margin: auto;
-    padding: 10px;
+	padding: 10px;
+	margin-top: 4px;
+}
+
+ul li#twitter{
+	margin-right:10px;
 }
 
 #discord a img, #instagram a img, #twitter a img{
@@ -431,9 +437,10 @@ img#vision_image {
 }
 
 
-#bottom_nav nav ul li{
+#bottom_nav nav ul li a{
 border: none;
-margin: 0px
+margin: 0px;
+padding: 0px;
 }
 
 #bottom_nav nav ul li{
@@ -445,6 +452,15 @@ margin: 0px
 #bottom_nav nav ul li#discord,#bottom_nav nav ul li#instagram,#bottom_nav nav ul li#twitter {
     padding-top: 5px;
 }
+
+#bottom_nav ul li#twitter {
+	margin-right: 0;
+}
+
+#bottom_nav #twitter, #bottom_nav #instagram, #bottom_nav #discord{
+	margin-top: 0;
+}
+
 
 
 #bottom_nav #text2, #bottom_nav #text1 {
@@ -459,7 +475,7 @@ margin: 0px
 }
 
 #highlights {
-	width: 68%;
+	width: 50%;
     text-align: center;
     margin: auto;
 	margin-bottom: 10px;
@@ -814,7 +830,7 @@ p#copyright_mark {
 	padding: 0;
 	background: rgba(0, 0, 0, 0);
 	position: fixed;
-	top: 10px;
+	top: 20px;
 	right: 0;
 	margin-right: 10px;
 	width: 60px;

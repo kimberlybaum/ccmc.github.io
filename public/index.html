@@ -5,7 +5,8 @@
 	<meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-	<title> Concrete Cowboy MC </title>
+  <title> Concrete Cowboy MC </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/demo.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +27,58 @@
       Concrete Cowboy MetaCollective
       </a>
     </div>
+
+
+
+
+
+<!-- ham start -->
+
+<a id="menulink" href="#" display="hidden">
+    <div class="hamburger-wrapper" display="hidden">
+      <div class="inner-hamburger-wrapper">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
+    </div>
+  </a>
+  
+  <div class="navigation-wrapper" display="hidden">
+  
+    <ul class="navigation">
+        <li>
+            <a href="terms.html">TERMS</a>
+        </li>  
+
+        <li>
+            <a href="address.html">PROVIDENCE</a>
+        </li>
+
+
+        <li >
+            <a href="vision.html">WORLD</a>
+        </li>
+         
+        <li id="twitter">
+            <a href="https://twitter.com/partyanimal_si">TWITTER <img  src="img/twitter.png"></a>
+        </li>
+            <li id="instagram">
+                <a href="https://www.instagram.com/si_partyanimals/">INSTAGRAM <img src="img/instagram.png"></a>
+            </li>
+
+      <li id="discord">
+          <a href="https://discord.gg/xwMrHXTMrR">DISCORD   <img  src="img/discord.png"></a>
+      </li>
+
+        </ul>
+  </div>
+
+
+<!-- stop -->
+
+
+
   <nav>
     <ul>
         <li id="text1">
@@ -33,7 +86,12 @@
         </li>  
 
         <li id="text2">
-            <a href="address.html">ADDRESS</a>
+            <a href="address.html">PROVIDENCE</a>
+        </li>
+
+
+        <li id="text2">
+            <a href="vision.html">WORLD</a>
         </li>
          
         <li id="twitter">
@@ -63,19 +121,51 @@
       
       <p>Crosschain Art, Exculsively on Solana</p>
 
+      <p id="presale">Presale Coming Soon<p>
+
       <div id="front_buttons">
-      <button id="mint_now">MINT NOW</button>
-      <button id="join"><a href="https://discord.gg/xwMrHXTMrR">JOIN THE COMMUNITY</a></button>
+      <!-- <button id="mint_now">Mint Now</button> -->
+      <button id="join"><a href="https://discord.gg/xwMrHXTMrR">Join the Discord</a></button>
       </div>
     </div> 
 
 		<div class="parallax bg1" id="bg1"></div>
-	</section>
+  </section>
+  
+
+	<section id="our_vision" class="container container--small">
+      <div class="content">
+          <h2>The CCMC Metaverse</h2>
+          <h3 class="color_sub">Solana City’s Art Community</h3>
+          <p class="pText">
+  
+              The Concrete Cowboy Metaverse is an MMO RPG powered by the Solana Blockchain, with each Concrete Cowboy providing entry to this virtual world. Our world provides the unique ability to showcase your NFTs purchased by any cryptocurrency, in your own MetaCollective apartment. Users are able to showcase NFTs that we verify are owned by them, so you know you’re seeing the originals. Unique gameplay activity includes:  </p>  
+              <div id="highlights">
+              <ul>
+                <li>Topping the leaderboards by having the most visted gallery</li>
+                  <li>Creating and minting art in-game</li>
+                  <li> Attending live performances by artists in Solana City Clubs</li>
+                  <li>Participating in airdrops you can only receive in-game</li>
+              </ul>
+              </div>
+
+              <p>
+              The goal of the project will be to develop a diverse community of people united by a common enthusiasm for blockchain technology and art, allowing them to form new connections and grow their community.
+          </p> 
+
+          <img id="vision_image" src ="img/frame 7.png">
+  
+      </div>
+      <div class="parallax" id="bg3"></div>
+    </section>
+
+    <hr id="hr">
 
 	<section id="party_animals_nft" class="container container--small">
 		<div class="content">
       <div class="written">
       <h2>The Concrete Cowboys</h2>
+      <h3 class="color_sub">Your ticket to the Metaverse</h3>
 
       <p class="pText">
           As the iconic cowboy is to the American west, so are these adorable urbanites to the vibrant city they inhabit. All at the vanguard of the art scene in Solana City, they’ve joined to form the Concrete Cowboy MetaCollective, a close-knit group of NFT collectors and creators, in order to appreciate others’ art, showcase their own, and party with friends old & new. Each lives in a stylish flat, where they host parties to show off their decor and display their art collections. Sometimes they enjoy Solana City’s nightlife a little too much, but they never return home without a new connection and a deeper place in their community. 
@@ -96,10 +186,17 @@
 
 	<section id="partners" class="container container--small">
       <div class="content">
+        <div id="aerial">
+          <img src="img/aerial.jpg">
+          </div>
+
+        <div>
         <h2>Partners</h2>
+        <h3 class="color_sub"> Saving our universe while we build a new one </h3>
         <p class="pText">
-            While using a scalable, proof of stake blockchain in Solana can do a lot to reduce the negative environmental impact of generating tokens, we are excited to announce our partnership with Aerial, a company who offsets the carbon emissions with each purchase. 
+            While using a scalable, proof of stake blockchain in Solana can do a lot to reduce the negative environmental impact of generating tokens, we are excited to announce our partnership with <span class="span_hl"> Aerial </span>, a company who offsets the carbon emissions with each purchase. 
           </p>
+        </div>
 
       </div>
       <!-- <div class="parallax" data-parallax-image="img/bg2.jpg"></div> -->
@@ -114,128 +211,154 @@
       <div class="content">
 
           <h2>Roadmap Activations</h2>
-         <p>
+          <h3 class="color_sub">Rewarding the Community</h3>
+         <p id="description">
            As we hit our milestones, we will grow and world and give back to everyone who has supported the Concrete Cowboy MetaCollective.
          </p>
         
          <ul>
              <li>
-               <p>10%</p>
-               <h1>Reinvestment</h1>
+               <div class="percent">
+                <p>10%</p>
+               </div>
+               <div>
+               <h1 id="2">Reinvestment</h1>
                <p>Immediately reinvest into bringing aboard more passionate engineers and artists to help us develop the game. Also do a bit of house cleaning and pay back our initial start-up fees.
                </p>
+               </div>
              </li>
     
              <li>
+                <div class="percent">
                  <p>25%</p>
-                 <h1>Rewarding Initial Buyers</h1>
+                </div>
+                <div>
+                 <h1 id="3">Rewarding Initial Buyers</h1>
                  <p>Airdrop VIP #Blackout Wristbands and Animated Frames to those who purchased on Black Friday or during the presale.</p>
-               </li>
+              </div> 
+            </li>
     
                <li>
+                  <div class="percent">
                    <p>50%</p>
-                   <h1>Sollapalooza</h1>
-                   <p>Give one lucky Concrete Cowboy owner 2 four-day VIP tickets to Lollapalooza to party with members of the community <a id="lolla" href='https://solana.com/lolla'>(check this out!)</a>  </p>
-                 </li>
+                  </div>
+                   <div>
+                   <h1 id="4">Sollapalooza</h1>
+                   <p>Give one lucky Concrete Cowboy owner 2 four-day VIP tickets to Lollapalooza to party with members of the community <a class="lolla" href='https://solana.com/lolla'>(check this out!)</a>  </p>
+                  </div>
+                  </li>
                  <li>
+                    <div class="percent">
                      <p>75%</p>
-                     <h1>Building the Collection</h1>
+                    </div>
+                    <div>
+                     <h1 id="5">Building the Collection</h1>
                      <p>Reward Concrete Cowboy owners who have all 7 types of Concrete Cowboys with a special Airdrop. The first person who collects all 7 will also receive a 1/1 VIP Band, granting them special status in the game.
                      </p>
+                    </div>
  
                    </li>
     
                    <li>
+                      <div class="percent">
                        <p>100%</p>
-                       <h1>Start Your Own Gallery</h1>
-                       <p>Give away $100,000.00 to a MetaCollective member to create a rad NFT collection. At this point we will also have given $X to environmental charities through our partner, Aerial!</p>
-                     </li>
+                      </div>
+                      <div>
+                       <h1 id="6">Start Your Own Gallery</h1>
+                       <p>Give away <span id="hunned">$50,000.00 </span>to a MetaCollective member to create a rad NFT collection. At this point we will also have given $X to environmental charities through our partner, Aerial!</p>
+                      </div>
+                      </li>
           </ul>
       <div class="parallax" id="bg3"></div>
     </section>
-<!-- 
-	<section class="container container--full">
-		<div class="content">
-			
-		</div>
-		<div class="parallax" data-parallax-image="img/bg4.jpg"></div>
-  </section> -->
-
-  
-
-	<section id="our_vision" class="container container--small">
-      <div class="content">
-          <h2>The CCMC World</h2>
-          <p class="pText">
-  
-              We plan to build a social MMO RPG powered by the Solana Blockchain, with each Concrete Cowboy providing the entry to this virtual world. Our world provides the unique ability to showcase your NFTs purchased by any cryptocurrency, in your own MetaCollective apartment. Users are only able to showcase nfts that we verify are owned by them, so you know you’re seeing the original. Leaderboards will show the top nft galleries, 
-              Players will also be able to explore the bars and clubs of this virtual city, play board games with friends in Concrete Cowboy Coffee shops, and participate in airdrops you can only receive in-game. The goal of the project will be to develop a diverse community of people united by a common enthusiasm for blockchain technology and art, allowing them to form new connections and grown their community.
-          </p> 
-  
-          <p>
-              We grew up playing Club Penguin, Webkinz, and RuneScape. As adults, we’ve been engrossed by blockchain technology and all it’s potential to revolutionize the world. We found that as we collected NFTs on the Solana blockchain over the last few months, we didn’t have an outlet to meet with friends, display our Solana NFTs, look at friends’ collections, and bond with new people over our shared enthusiasm. We plan to provide an exclusive metaverse to act as a hub for NFT appreciation, sharing, exchange, and donation just for fanatics like us. We will work to build a strong community and a complex world around it, making it more than just a set of galleries to walk around in. The world will also have games, coffee shops, bars, clubs, and galleries sponsored by the Collective itself. Gain a following of people who appreciate your NFTs, and climb the leaderboard as you accumulate a stronger and stronger collection. Conceptualize, create, and mint your own new NFTs with friends in the Collective’s art studio. Participate in members-only events to vie for rare airdrops & merch.
-          </p>
-  
-  
-          <p>
-              We also realized we didn’t want to exclude people with Ethereum NFTs from fully showcasing their collections to the community. That’s why we’re building cross-platform NFT recognition, so that you can hang not just your Solana art on the wall, but all your art. This will provide a richer, more accessible experience to a larger portion of the blockchain community. 
-            </p>
-  
-          
-            <p>
-            We’ve begun assembling a team with professional experience in art design, blockchain and web development, game design, operations, and community marketing and outreach. We want to bring even more people on board to bring our ambitious vision to life, and we will reinvest our profits from the initial drop into making that happen. 
-              </p>
-  
-      </div>
-      <div class="parallax" id="bg3"></div>
-    </section>
-
       
   <hr>
 
   <section id="team" class="container container--small">
       <div class="content">
         <h2>Meet The Team</h2>
+        <h3 class="color_sub">Get to know the creators</h3>
 
         <div id="kim">
            
-          <h3>Kim</h3>
-          <img src="img/kim.png">
+ 
+          <img src="img/kim1.png">
+        <h3>Kim</h3>
         <p class="pText">
-          Founder, Artist. Cornell CS grad with a background in game design. Check out some of her other art [here].
+          Artist. Cornell CS grad, background in game design. Check out her <a class="lolla" href="https://www.instagram.com/kimbaum_/"> art </a>.
           </p>
         </div>
 
         <div id="pete">
+       
+            <img src="img/pete1.png">
             <h3>Jack</h3>
-            <img src="img/pete.png">
           <p class="pText">
-            Eng expert with a background in blockchain dev and fintech. Ex-Apple. Long time art collector.
+            Engineer. Background in blockchain dev and fintech. Hot sauce enthusiast.
             </p>
+
+            <!-- ex-apple, ex-microsoft -->
           </div>
 
 
           <div id="harrison">
 
+            
+              <img src="img/harrison1.png">
               <h3>Harrison</h3>
-              <img src="img/harrison.png">
             <p class="pText">
-              Marketing lead with a tech and finance background. Passionate about the nft community. 
+
+              Marketing Lead. Sales and Product at VMware. Will spank you in volleyball.
               </p>
             </div>
 
       </div>
-      <!-- <div class="parallax" data-parallax-image="img/bg2.jpg"></div> -->
       <div class="parallax"></div>
     </section>
   
 
     <hr>
   
-  <section class="copyright container container--small bottomSocials">
-    <div class="content">
-      <p> join our mailing list</p>
-      </div>
+  <section id ="bottom_nav" class="copyright container container--small bottomSocials">
+      <div class="content">
+    
+        <nav>
+          <ul>
+            <div id="pages">
+              <li id="text2">
+                  <a href="vision.html">WORLD</a>
+              </li>
+
+              <li id="text1">
+                  <a href="terms.html">TERMS</a>
+              </li>  
+      
+              <li id="text2">
+                  <a href="address.html">ADDRESS</a>
+              </li>
+               
+              </div>
+              <div id="icons">
+                  <li id="text2">
+                      <a href="mailto:theconcretecowboymetacollective@gmail.com"> CONTACT US</a>
+                  </li>
+
+              <li id="twitter">
+                  <a href="https://twitter.com/concretecowboyz"><img  src="img/twitter.png"></a>
+              </li>
+                  <li id="instagram">
+                      <a href="https://www.instagram.com/conretecowboyz/"><img src="img/instagram.png"></a>
+                  </li>
+      
+            <li id="discord">
+                <a href="https://discord.gg/xwMrHXTMrR"><img  src="img/discord.png"></a>
+            </li>
+            </div>
+          </ul>
+        </nav>
+        </div>
+        <div class="copyright parallax" id="bg3"></div>
+
   </section>
 
   	<section class="copyright container container--small">
@@ -247,8 +370,13 @@
         <div class="copyright parallax" id="bg3"></div>
       </section>
 
-	<script src="../dist/universal-parallax.min.js"></script>
-	<script src="js/demo.js"></script>
+
+
+  <script src="../dist/universal-parallax.min.js"></script>
+  
+  <script src="js/demo.js"></script>
+  <script src="jquery-1.6.1.js"></script>
+<script src="my_jquery.js"></script>
 	<script>
 		new universalParallax().init({
 			speed:4
@@ -256,6 +384,7 @@
   </script>
   
   <div id="app"></div>
+
 
 </body>
 </html>

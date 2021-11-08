@@ -14,7 +14,7 @@
 	/* background-color:rgba(0, 0, 0, 0.406); otherwise content underneath will be visible */
 	color: white;
 	display: flex;
-	background-color: rgba(0, 0, 0, 0.32);
+	background-color: rgba(0, 0, 0, 0.52);
 	font-family: 'Roboto Condensed',sans-serif;
 }
 
@@ -92,6 +92,7 @@ letter-spacing: .2rem;
 #header ul li a {
 	width:100%;
 	height:100%;
+	text-align: center;
 }
 #text2, #text1 {
 	border: .5px solid rgba(255, 255, 255, 0.543);
@@ -754,7 +755,7 @@ p#copyright_mark {
 
 	
 	div#header{
-		background-color: rgba(0, 0, 0, 0.32);
+		background-color: rgba(0, 0, 0, 0.488);
 		height:auto
 	}
 

@@ -23,15 +23,15 @@ function bounceArrow() {
 
         0 <= e.top + e.height && e.top <= t && (i.getBoundingClientRect().top < e.height / 2 ? i.classList.add("arrow--hide") : i.classList.remove("arrow--hide"));
    
-        // 0 <= e2.top + e2.height && e2.top <= t && (j2.getBoundingClientRect().top < e2.height*2 ? j2.classList.add("current_target") : j2.classList.remove("current_target"));
+        0 <= e2.top + e2.height && e2.top <= t && (j2.getBoundingClientRect().top < e2.height*2 ? j2.classList.add("current_target") : j2.classList.remove("current_target"));
 
-        // 0 <= e3.top + e3.height && e3.top <= t && (j3.getBoundingClientRect().top < e3.height*2 ? j3.classList.add("current_target") : j3.classList.remove("current_target"));
+        0 <= e3.top + e3.height && e3.top <= t && (j3.getBoundingClientRect().top < e3.height*2 ? j3.classList.add("current_target") : j3.classList.remove("current_target"));
 
-        // 0 <= e4.top + e4.height && e4.top <= t && (j4.getBoundingClientRect().top < e4.height*2 ? j4.classList.add("current_target") : j4.classList.remove("current_target"));
+        0 <= e4.top + e4.height && e4.top <= t && (j4.getBoundingClientRect().top < e4.height*2 ? j4.classList.add("current_target") : j4.classList.remove("current_target"));
 
-        // 0 <= e5.top + e5.height && e5.top <= t && (j5.getBoundingClientRect().top < e5.height*2 ? j5.classList.add("current_target") : j5.classList.remove("current_target"));
+        0 <= e5.top + e5.height && e5.top <= t && (j5.getBoundingClientRect().top < e5.height*2 ? j5.classList.add("current_target") : j5.classList.remove("current_target"));
 
-        // 0 <= e6.top + e6.height && e6.top <= t && (j6.getBoundingClientRect().top < e6.height*2 ? j6.classList.add("current_target") : j6.classList.remove("current_target"));
+        0 <= e6.top + e6.height && e6.top <= t && (j6.getBoundingClientRect().top < e6.height*2 ? j6.classList.add("current_target") : j6.classList.remove("current_target"));
 
    
     });

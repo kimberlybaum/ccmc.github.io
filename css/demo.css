@@ -22,7 +22,7 @@
     /* top left corner should start at leftmost spot */
     top: 0;
     /* top left corner should start at topmost spot */
-    width: 100vw;
+    width: 100%;
     /* take up the full browser width */
     z-index: 200;
     /* high z index so other content scrolls underneath */
@@ -764,7 +764,20 @@ p#copyright_mark {
 }
 
 @media screen and (max-width: 450px) {
-    #front_card {}
+
+    .bg1 {
+        background-image: url("../img/partyscene_mobile3.png") !important;
+    }
+
+    ul li div.percent p {
+        font-size: 1.2rem !important;
+    }
+    
+    .content h2 {
+        font-size: 40px !important;
+        line-height: 54px !important;
+    }
+
     #our_vision h2 {
         margin-top: 30px;
     }

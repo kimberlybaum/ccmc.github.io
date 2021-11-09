@@ -7,8 +7,6 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title> Concrete Cowboy MC </title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../dist/universal-parallax.min.js"></script>
-    <script src="js/demo.js"></script>
     <link rel="stylesheet" type="text/css" href="css/demo.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -149,7 +147,7 @@
 
             </p>
 
-            <img id="vision_image" src="img/frame 7.png">
+            <img id="vision_image" src="img/frame7.png">
 
             <div id="highlights">
                 <ul>
@@ -404,14 +402,18 @@
 
 
 
+    <script src="../dist/universal-parallax.min.js"></script>
 
-
+    <script src="js/demo.js"></script>
+    <script src="jquery-1.6.1.js"></script>
+    <script src="my_jquery.js"></script>
     <script>
         new universalParallax().init({
             speed: 2.5
         });
     </script>
 
+    <div id="app"></div>
 
 
 </body>

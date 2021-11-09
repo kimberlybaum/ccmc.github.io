@@ -89,7 +89,6 @@ ul {
     margin: 0;
 }
 
-
 /* #header ul li{
 	display: inline-block;
 	float: right;
@@ -398,6 +397,10 @@ ul li div.percent p {
 .current_target {
     transition: color 200ms ease-in-out;
     color: #f2711c
+}
+
+#prov_image {
+    width: 100%;
 }
 
 body,
@@ -772,10 +775,8 @@ p#copyright_mark {
 @media screen and (max-width: 450px) {
 
     .bg1 {
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        background-size:contain;
+        background-position-x: 30% !important;
     }
 
     ul li div.percent p {

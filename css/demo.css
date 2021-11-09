@@ -405,6 +405,7 @@ html {
 body {
     font-family: 'roboto', sans-serif;
     background-color: #151515 !important;
+    margin: 0px !important;
 }
 
 h1 {
@@ -660,7 +661,7 @@ p#copyright_mark {
 }
 
 .bg1 {
-    background-image: url("../img/PartyScene_final.png") !important;
+    background-image: url("../img/cityscene_final_.png") !important;
     transition: scale 250ms ease-in-out;
 }
 
@@ -681,7 +682,7 @@ p#copyright_mark {
     -webkit-animation: bounce 3s infinite;
     animation: bounce 3s infinite;
     bottom: -64px;
-    bottom: -3rem;
+    bottom: -2rem;
     left: calc(50% - 19px);
     position: absolute;
     -webkit-transform: translateX(-50%);

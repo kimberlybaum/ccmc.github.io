@@ -785,7 +785,7 @@ p#copyright_mark {
         display: none;
     }
     .arrow {
-        bottom: -40px;
+        bottom: -15px;
     }
     .content {
         /* padding: 30px !important; */
@@ -825,12 +825,15 @@ p#copyright_mark {
     }
     div#header {
         background-color: rgba(0, 0, 0, 0.488);
-        height: auto
     }
     ul li#discord,
     ul li#instagram,
     ul li#twitter {
         padding: 5px;
+    }
+
+    .hamburger-wrapper{
+        top: 25px !important;
     }
     .container {
         padding: 40px 4% 0;

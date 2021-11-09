@@ -896,6 +896,7 @@ p#copyright_mark {
     width: 50%;
     height: 3px;
     margin: 4px auto;
+    margin-top: 6px;
     background: #fff;
     border-radius: 2px;
 }

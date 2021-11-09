@@ -771,9 +771,12 @@ p#copyright_mark {
 
 @media screen and (max-width: 450px) {
 
-    /* .bg1 {
-        background-image: url("../img/partyscene_mobile2.png") !important;
-    } */
+    .bg1 {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 
     ul li div.percent p {
         font-size: 1.2rem !important;
@@ -832,10 +835,22 @@ p#copyright_mark {
     div#header {
         background-color: rgba(0, 0, 0, 0.488);
     }
-    ul li#discord,
-    ul li#instagram,
-    ul li#twitter {
-        padding: 5px;
+
+
+    li#discord.small-padding a,
+    li#instagram.small-padding a,
+    li#twitter.small-padding a{
+        padding: 25px !important;
+    }
+
+
+    li#discord.small-padding a {
+        margin-bottom: 100% !important;
+    }
+
+
+    ul .navigation li {
+        padding: unset !important;
     }
 
     .hamburger-wrapper{
@@ -1027,6 +1042,26 @@ p#copyright_mark {
 }
 
 @media screen and (max-width: 750px) {
+
+
+
+    li#discord.small-padding a,
+    li#instagram.small-padding a,
+    li#twitter.small-padding a{
+        padding: 25px !important;
+    }
+
+
+    li#discord.small-padding a {
+        margin-bottom: 100% !important;
+    }
+
+    #hamterms{
+        padding-top: 0px !important;
+        margin-top: 0px !important;
+        
+    }
+
     #members {
         display: unset;
     }

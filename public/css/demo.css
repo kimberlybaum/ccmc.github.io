@@ -2,6 +2,14 @@
 	box-sizing: border-box;
 }
 
+
+#logo_image {
+	/* overflow:hidden;
+	font-size: 20px;
+	font-family: 'Roboto Condensed',sans-serif; */
+	height: 100%;
+}
+
 #header {
     position:fixed; /* fixing the position takes it out of html flow - knows
     				   nothing about where to locate itself except by browser
@@ -279,7 +287,7 @@ ul li div.percent p{
     width: 80px;
 	font-weight: 300;
 	text-align: left;
-	color: rgb(87, 210, 255);
+	color: rgb(99, 75, 254);
 	margin-top: 6px;
 	padding-left: 7px;
 	font-weight: 700;
@@ -341,12 +349,19 @@ ul li div.percent p{
 	text-align: center;
 }
 
+#members {
+	display: flex;
+	margin-left: 7%;
+}
 
 #kim, #pete, #harrison {
 	width: 30%;
 	display: inline-block;
 	text-align: center;
-	margin-bottom: 40px;
+}
+
+#kim img, #pete img, #harrison img{
+	border-radius: .5em;
 }
 
 #pete {
@@ -635,7 +650,7 @@ p#copyright_mark {
 }
 
 .bg1 {
-	background-image: url("../img/CityScene 2.png") !important;
+	background-image: url("../img/PartyScene_final.png") !important;
 	transition: scale 250ms ease-in-out;
 }
 
@@ -779,6 +794,8 @@ p#copyright_mark {
 	#pages {
 		display: none;
 	}
+
+
 
 	
 	#header ul li{
@@ -968,6 +985,8 @@ p#copyright_mark {
 
 @media screen and (max-width: 650px) {
 
+
+
 	#partners div.content{
 		display: block
 	}
@@ -1019,6 +1038,15 @@ p#copyright_mark {
 
 @media screen and (max-width: 750px) {
 
+	#members {
+		display: unset;
+	}
+
+	div#kim p, div#pete p{
+		padding-bottom: 40px;
+	}
+
+
 	.inner-hamburger-wrapper {
 		display: unset;
 	}
@@ -1041,12 +1069,6 @@ p#copyright_mark {
 		height:auto !important;
 	}
 
-
-	#logo{
-		overflow:hidden;
-		font-size: 20px;
-		font-family: 'Roboto Condensed',sans-serif;
-	}
 
 	#discord a img, #instagram a img, #twitter a img{
 		filter: invert(100);

@@ -278,6 +278,8 @@ section#milestones.container.container--huge {
 #milestones ul li {
     list-style: none;
     border: #303030 1px solid;
+    border-left: none;
+    border-right: none;
     text-align: left;
     padding: 3vw;
     width: 100%;

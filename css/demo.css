@@ -771,9 +771,9 @@ p#copyright_mark {
 
 @media screen and (max-width: 450px) {
 
-    .bg1 {
-        background-image: url("../img/partyscene_mobile3.png") !important;
-    }
+    /* .bg1 {
+        background-image: url("../img/partyscene_mobile2.png") !important;
+    } */
 
     ul li div.percent p {
         font-size: 1.2rem !important;

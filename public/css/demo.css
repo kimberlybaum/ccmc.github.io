@@ -31,7 +31,7 @@
     /* background-color:rgba(0, 0, 0, 0.406); otherwise content underneath will be visible */
     color: white;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.52);
+    background-color: rgba(0, 0, 0, 0.62);
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -680,7 +680,7 @@ p#copyright_mark {
     -webkit-animation: bounce 3s infinite;
     animation: bounce 3s infinite;
     bottom: -64px;
-    bottom: -4rem;
+    bottom: -3rem;
     left: calc(50% - 19px);
     position: absolute;
     -webkit-transform: translateX(-50%);

@@ -506,6 +506,7 @@ img#vision_image {
 #bottom_nav nav ul li#instagram,
 #bottom_nav nav ul li#twitter {
     padding-top: 5px;
+    margin: 10px !important;
 }
 
 #bottom_nav ul li#twitter {

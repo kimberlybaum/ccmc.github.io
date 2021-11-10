@@ -669,7 +669,7 @@ p#copyright_mark {
 }
 
 .bg1 {
-    background-image: url("../img/cityscene_final_.png") !important;
+    background-image: url("../img/city_final.png") !important;
     transition: scale 250ms ease-in-out;
 }
 
@@ -937,7 +937,7 @@ p#copyright_mark {
 .navigation-wrapper {
     background: #000;
     background: rgba(0, 0, 0, .9);
-    padding: 40px 0 0 0;
+    padding: 0 0 0 0;
     position: fixed;
     top: 0;
     right: 0;

@@ -509,7 +509,8 @@ div#drop {
     text-align: center;
     margin: auto;
     /* color: white; */
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
     border-radius: .5em;
 }
 

@@ -502,6 +502,30 @@ img#vision_image {
     font-size: 15px
 }
 
+div#drop {
+    padding: 15px;
+    background-color: hsl(28, 90%, 46%) !important;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    /* color: white; */
+    margin-bottom: 20px;
+    border-radius: .5em;
+}
+
+#drop h1{
+    padding: 0px;
+    margin: 0px;
+    color: black;
+}
+
+#drop p {
+    color: white;
+    font-family: 'Roboto condensed', sans-serif;
+    margin-bottom:0px;
+    padding-bottom: 0px !important;
+}
+
 #bottom_nav nav ul li#discord,
 #bottom_nav nav ul li#instagram,
 #bottom_nav nav ul li#twitter {

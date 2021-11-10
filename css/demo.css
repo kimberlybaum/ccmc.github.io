@@ -222,6 +222,11 @@ button#mint_now:hover {
     background-color: #b85514;
 }
 
+
+#members.mem2 {
+    padding-top:30px;
+}
+
 #party_animals_nft div.content {
     text-align: left;
     padding: 64px;
@@ -1066,6 +1071,8 @@ p#copyright_mark {
     #members {
         display: unset;
     }
+
+    
     div#kim p,
     div#pete p {
         padding-bottom: 40px;

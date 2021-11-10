@@ -534,8 +534,7 @@ div#drop {
 #bottom_nav nav ul li#discord,
 #bottom_nav nav ul li#instagram,
 #bottom_nav nav ul li#twitter {
-    padding-top: 5px;
-    margin: 10px !important;
+    padding-top: 0px;
 }
 
 #bottom_nav ul li#twitter {
@@ -1123,6 +1122,14 @@ p#copyright_mark {
         width: 100% !important;
         height: auto !important;
     }
+
+
+#bottom_nav nav ul li#discord,
+#bottom_nav nav ul li#instagram,
+#bottom_nav nav ul li#twitter {
+    padding-top: 10px;
+}
+
     #discord a img,
     #instagram a img,
     #twitter a img {

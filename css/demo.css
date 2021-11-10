@@ -502,6 +502,10 @@ img#vision_image {
     font-size: 15px
 }
 
+#animated {
+
+}
+
 div#drop {
     padding: 15px;
     background-color: hsl(28, 90%, 46%) !important;

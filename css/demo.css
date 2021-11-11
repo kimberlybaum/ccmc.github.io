@@ -36,6 +36,7 @@
 }
 
 #front_card {
+    color: white;
     background-color: rgba(0, 0, 0, 0.71);
     margin-top: calc(68vh - 90px);
     font-size: 15px;
@@ -44,6 +45,7 @@
 }
 
 #front_card p {
+    color: white;
     font-size: 18px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;

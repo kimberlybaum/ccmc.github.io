@@ -704,7 +704,6 @@ p#copyright_mark {
 
 .bg1 {
     background-image: url("../img/city_final.png") !important;
-    transition: scale 250ms ease-in-out;
 }
 
 #bg2 {

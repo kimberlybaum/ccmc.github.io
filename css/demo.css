@@ -117,7 +117,11 @@ ul {
 #text1 a {
     border: .5px solid rgba(255, 255, 255, 0.543);
     padding: 20px;
-    text-align: center
+    text-align: center;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    transition: all .2s ease-in;
 }
 
 #text2 a:hover,
@@ -162,6 +166,10 @@ ul li#twitter {
 #discord img:hover,
 #instagram img:hover,
 #twitter img:hover {
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    transition: all .2s ease-in;
     transition: all .3s ease-in-out;
     width: 35px;
 }
@@ -208,6 +216,10 @@ a,
 a:hover,
 a:focus,
 a:active {
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    transition: all .2s ease-in;
     color: inherit !important;
 }
 
@@ -610,6 +622,7 @@ p.p--credits {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+
 p strong {
     display: inline-block;
     margin-bottom: 2px;
@@ -674,7 +687,21 @@ p#copyright_mark {
     color: rgb(80, 80, 80);
     font-size: 14px;
     font-family: 'Roboto Condensed', sans-serif;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    transition: all .2s ease-in;
 }
+
+
+p#copyright_mark a:hover{
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    transition: all .2s ease-in;
+    color: white !important;
+}
+
 
 .parallax__container {
     clip: rect(0, auto, auto, 0);
@@ -704,6 +731,7 @@ p#copyright_mark {
 
 .bg1 {
     background-image: url("../img/city_final.png") !important;
+    transition: scale 250ms ease-in-out;
 }
 
 #bg2 {
@@ -792,6 +820,10 @@ p#copyright_mark {
 }
 
 #lolla:hover {
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    transition: all .2s ease-in;
     color: hsl(28, 82%, 38%) !important;
     transition: color 150ms ease-in-out;
 }
@@ -1029,6 +1061,10 @@ p#copyright_mark {
 }
 
 .navigation li a:hover {
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    transition: all .2s ease-in;
     color: #fff;
     padding-left: 2%;
     border-left: 3px solid #eee;
@@ -1126,7 +1162,7 @@ p#copyright_mark {
 #bottom_nav nav ul li#discord,
 #bottom_nav nav ul li#instagram,
 #bottom_nav nav ul li#twitter {
-    padding-top: 10px;
+    padding-top: 0zpx;
 }
 
     #discord a img,

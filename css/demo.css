@@ -732,7 +732,7 @@ p#copyright_mark a:hover{
 }
 
 .bg1 {
-    background-image: url("../img/allchars.png") !important;
+    background-image: url("../img/allchars1.png") !important;
     transition: scale 250ms ease-in-out;
     background-position-y: 0% !important;
 }

@@ -39,7 +39,7 @@ function bounceArrow() {
 bounceArrow();
 
 $(document).ready(function() {
-
+    
 	$('#menulink').click(function(event) {
 		event.preventDefault();
 		if($('.navigation-wrapper').hasClass('show-menu')) {

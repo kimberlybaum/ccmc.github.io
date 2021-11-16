@@ -275,7 +275,6 @@ button#mint_now:hover {
 
 #our_vision div.content p {
     padding-bottom: 10px;
-    padding-top: 20px;
 }
 
 section#milestones.container.container--huge {
@@ -578,7 +577,7 @@ div#drop {
     width: 100%;
     text-align: center;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     letter-spacing: .05rem;
     font-weight: 400;
     font-size: 14pt;
@@ -763,7 +762,7 @@ p#copyright_mark a:hover{
     transform: translateX(-50%);
     transition: opacity 250ms ease-in-out;
     width: 38px;
-    filter: invert(100);
+
 }
 
 .arrow--hide {
@@ -821,6 +820,21 @@ p#copyright_mark a:hover{
 #hunned {
     color: hsl(28, 89%, 49%);
     font-weight: bold;
+}
+
+#medium{
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+  
+}
+#medium:hover{
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    color: hsl(28, 82%, 38%) !important;
+    transition: color 50ms ease-in-out;
 }
 
 #lolla:hover {

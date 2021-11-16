@@ -31,13 +31,13 @@
     /* background-color:rgba(0, 0, 0, 0.406); otherwise content underneath will be visible */
     color: white;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.62);
+    background-color: rgba(0, 0, 0, 0.82);
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 #front_card {
     color: white;
-    background-color: rgba(0, 0, 0, 0.71);
+    background-color: rgba(0, 0, 0, 0.81);
     margin-top: calc(68vh - 90px);
     font-size: 15px;
     box-shadow: 10px 0px 20px 10px rgb(0, 0, 0, .16);
@@ -275,6 +275,7 @@ button#mint_now:hover {
 
 #our_vision div.content p {
     padding-bottom: 10px;
+    padding-top: 20px;
 }
 
 section#milestones.container.container--huge {
@@ -732,7 +733,7 @@ p#copyright_mark a:hover{
 }
 
 .bg1 {
-    background-image: url("../img/city_final.png") !important;
+    background-image: url("../img/allchars.png") !important;
     transition: scale 250ms ease-in-out;
 }
 
@@ -843,7 +844,7 @@ p#copyright_mark a:hover{
 
     .bg1 {
         background-size:contain;
-        background-position-x: 30% !important;
+        background-position-x: 50% !important;
     }
 
     ul li div.percent p {

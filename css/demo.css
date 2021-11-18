@@ -473,11 +473,11 @@ h1 {
 }
 
 img#vision_image {
-    padding-top: 10px;
+    padding-top: 0px;
     margin-bottom: 15px;
     margin-top: 5px;
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 #bottom_nav {
@@ -1155,7 +1155,20 @@ p#copyright_mark a:hover{
 }
 
 @media screen and (max-width: 750px) {
-
+    #kim,
+    #pete,
+    #harrison {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    #team div img {
+        width: 100%;
+    }
+    #pete {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 
 
     li#discord.small-padding a,

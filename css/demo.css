@@ -765,6 +765,7 @@ p#copyright_mark a:hover{
     transform: translateX(-50%);
     transition: opacity 250ms ease-in-out;
     width: 38px;
+    filter: invert(100);
 
 }
 

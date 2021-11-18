@@ -860,6 +860,10 @@ p#copyright_mark a:hover{
 
 @media screen and (max-width: 450px) {
 
+    .arrow {
+        filter: invert(100%);
+    }
+
     #partners p.pText {
         margin-bottom: 30px;
     }
